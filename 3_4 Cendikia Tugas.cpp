@@ -1,15 +1,23 @@
 #include <stdio.h>
+int main()
 
-int main(){
-	int x;
-	printf("masukkan bilangan : ");
-	scanf("%d", &x);
-	if (x&2==0) {
-		printf("%d adalahbilangan genap\n\n", x);
-	}else{
-		printf("%d adalah bilangan ganjil\n\n", x);
+{
+	//Deklarasi variabel
+	int bilangan;
+	
+	//Meminta input bilangan dari pengguna 
+	printf("masukkan sebuah bilangan bulat positif: ");
+	scanf("%d", &bilangan);
+	
+	//Memeriksa apakah bilangan positif atau tidak
+	
+	//Memeriksa apakah bilangan genap atau ganjil
+	if (bilangan % 2 == 0) {
+		printf("GENAP\n");
+	}
+	else {
+		printf("GANJIL\n");
 	}
 	
 	return 0;
-	
 }
